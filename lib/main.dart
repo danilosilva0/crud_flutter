@@ -4,8 +4,17 @@ import 'package:crud_flutter/pages/first_page.dart';
 import 'package:crud_flutter/pages/second_page.dart';
 import 'package:crud_flutter/pages/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
+void main() async{
+
+  //init hive
+  await Hive.initFlutter();
+
+  //open box
+  var box = await Hive.openBox('mybox');
+
   runApp(MyApp());
 }
 
