@@ -77,10 +77,10 @@ class _HomePageState extends State<HomePage>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      backgroundColor: Colors.yellow[100],
+      backgroundColor: Colors.brown[700],
       appBar: AppBar(
           title: Text("TO DO App"),
-          backgroundColor: Colors.yellow,
+          backgroundColor: Colors.yellow.shade400,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
