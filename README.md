@@ -1,2 +1,2 @@
 # crud_flutter
-My first Flutter app
+Flutter application with Hive connection
